@@ -4,6 +4,7 @@ const { dump } = require('dumper.js');
 const app = express();
 app.use(express.json());
 app.set('port', process.env.PORT);
+app.set("token", process.env.TOKEN);
 
 app.get('/', function (req, res) {
     const { params, query, headers } = req;
@@ -11,6 +12,8 @@ app.get('/', function (req, res) {
 });
 app.get("/callback", function (req, res) {
     const { access_token, oaId } = req.query;
+    // const token = app.get("token");
+    app.set("token", access_token);
     res.status(200).send(access_token);
 })
 
