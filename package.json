@@ -1,0 +1,24 @@
+{
+  "name": "zalo-webhook",
+  "version": "1.0.0",
+  "description": "Demo zalo web hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kma-academy/zalo-webhook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kma-academy/zalo-webhook/issues"
+  },
+  "homepage": "https://github.com/kma-academy/zalo-webhook#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "dumper.js": "^1.3.1",
+    "express": "^4.17.1"
+  }
+}
